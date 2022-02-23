@@ -66,6 +66,7 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 /* ----- START COMPONENTS ----- */
 
 /* ----- START HEADER ----- */
@@ -106,6 +107,9 @@ img {
 }
 .nav-list-link:hover,
 .nav-list-link:focus {
+  color: var(--accent-color);
+}
+.active {
   color: var(--accent-color);
 }
 
