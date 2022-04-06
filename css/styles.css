@@ -71,6 +71,7 @@ img {
 
 /* ----- START HEADER ----- */
 .header {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -552,6 +553,7 @@ img {
   border-top: none;
 }
 .portfolio-link {
+  display: block;
   color: inherit;
 }
 .portfolio-list {
