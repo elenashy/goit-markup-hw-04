@@ -72,8 +72,6 @@ img {
 /* ----- START HEADER ----- */
 .header {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .navigation {
   display: flex;
@@ -85,6 +83,8 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin-right: 90px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 
   color: var(--accent-color);
 }
@@ -103,6 +103,8 @@ img {
   font-size: 14px;
   line-height: 1.33;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--secondary-text-color);
 }
@@ -127,7 +129,8 @@ img {
   font-size: 14px;
   line-height: 1.33;
   letter-spacing: 0.02em;
-  margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: inherit;
 }
@@ -143,10 +146,16 @@ img {
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: inherit;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .contact-tel:hover,
 .contact-tel:focus {
   color: var(--accent-color);
+}
+
+.contact-list-icon-item:not(:last-child) {
+  margin-right: 50px;
 }
 .contact-list-icon-item {
   display: flex;
@@ -174,6 +183,8 @@ img {
     ),
     url(../img/hero-img.jpg);
   background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 .hero-title {
   align-items: center;
@@ -183,7 +194,8 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
+  width: 690px;
+  margin: 0 auto;
   color: var(--primary-hero-text-color);
 }
 .hero-btn-modal {
@@ -382,6 +394,9 @@ img {
   align-items: center;
   width: 170px;
   height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 .clients-list-item:not(:first-child) {
   margin-left: 30px;
@@ -390,10 +405,10 @@ img {
 .clients-list-item:focus {
   border: 1px solid rgba(33, 150, 243, 1);
 }
-.clients-list-item {
+/* .clients-list-item {
   border: 1px solid #afb1b8;
   border-radius: 4px;
-}
+} */
 .icon-clients {
   fill: #afb1b8;
 }
@@ -456,6 +471,10 @@ img {
 
   color: var(--primary-text-footer-color);
 }
+.footer-contact-mail:hover,
+.footer-contact-mail:focus {
+  color: var(--accent-color);
+}
 .footer-contact-tel {
   font-style: normal;
   font-size: 14px;
@@ -463,6 +482,10 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--primary-text-footer-color);
+}
+.footer-contact-tel:hover,
+.footer-contact-tel:focus {
+  color: var(--accent-color);
 }
 .join-container {
   height: 80px;
@@ -517,11 +540,12 @@ img {
 .portfolio-button-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .button-list-item:not(:first-child) {
   margin-left: 8px;
 }
+
 .portfolio-btn {
   display: block;
   min-width: 74px;
@@ -539,6 +563,12 @@ img {
 
   background-color: var(--secondary-background-color);
   color: var(--primary-text-btn-color);
+}
+.active-button {
+  color: var(--secondary-text-btn-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
